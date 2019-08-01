@@ -1,0 +1,96 @@
+company_name;company_id;recency;frequency;monetary_value;r_quartile;f_quartile;m_quartile;RFMScore;total_score;segment_id;segment_name
+Adams Ltd;91;1163;1;101.59887496433176;1;1;1;111;3;11;hibernating
+Alvarez, Hancock and Bowers;14;0;18198;910635.483156178;5;4;4;544;13;54;champions
+Alvarez-Hernandez;19;0;12127;609982.4803594563;5;4;4;544;13;54;champions
+Avila-Garrison;43;0;7301;365330.8800338183;5;4;4;544;13;54;champions
+Baldwin Ltd;20;0;36237;1814658.3802833525;5;5;5;555;15;55;champions
+Barajas, Smith and Ballard;92;822;2;63.95610250789018;1;1;1;111;3;11;hibernating
+Beasley, Shelton and Cox;16;0;34152;1705608.572898105;5;5;5;555;15;55;champions
+Bell, Bryant and Williams;8;0;39536;1970245.131118006;5;5;5;555;15;55;champions
+Bell, Miller and Black;3;0;20491;1025436.8526906607;5;4;4;544;13;54;champions
+Booth, Diaz and Mcdonald;26;0;2607;129388.71080262677;5;3;3;533;11;53;potential loyalists
+Bowen-Golden;67;13;236;11233.219184534426;2;2;2;222;6;22;hibernating
+Brock Ltd;89;478;3;71.53428274739329;1;1;1;111;3;11;hibernating
+Brown-Robinson;47;0;703;35995.31149969241;5;2;2;522;9;52;potential loyalists
+Butler Inc;69;1;387;19732.401601879552;3;2;2;322;7;32;about to sleep
+Camacho, Moran and Brown;34;0;3965;199102.8111740016;5;3;3;533;11;53;potential loyalists
+Cameron Inc;76;53;9;497.93670893000046;1;1;1;111;3;11;hibernating
+Carroll-Vaughn;73;41;139;6813.5258083374465;1;2;2;122;5;12;hibernating
+Castillo, Martinez and Stevens;94;472;1;69.02788139161842;1;1;1;111;3;11;hibernating
+Chapman, Lewis and Johnson;49;1;2565;128135.05044984086;3;3;3;333;9;33;need attention
+Cohen, Carey and Hardy;82;179;10;700.5056287502294;1;1;1;111;3;11;hibernating
+Cohen, Hamilton and Hoffman;25;0;25424;1263723.689185015;5;5;4;554;14;55;champions
+Cole, Smith and Ross;84;201;2;122.13622723007614;1;1;1;111;3;11;hibernating
+Dalton, Richards and Holmes;60;1;954;46743.36831286605;3;3;3;333;9;33;need attention
+Davidson Inc;7;0;39443;1971419.6900442014;5;5;5;555;15;55;champions
+Davis Inc;24;0;8534;429756.6264266347;5;4;4;544;13;54;champions
+Davis, Quinn and Howard;55;0;904;46853.44732255807;5;3;3;533;11;53;potential loyalists
+Dixon-Taylor;71;33;75;3781.6173335919807;1;2;2;122;5;12;hibernating
+Dunlap-Smith;33;0;27837;1394680.1287406592;5;5;5;555;15;55;champions
+Foley, Johnson and Ramos;58;23;170;7950.66885879397;2;2;2;222;6;22;hibernating
+Ford PLC;38;0;5869;293122.7963248273;5;3;3;533;11;53;potential loyalists
+Garcia-Bishop;11;0;18564;924525.4193190129;5;4;4;544;13;54;champions
+Gibson PLC;65;2;712;36173.86868226827;2;3;3;233;8;23;at risk
+Gibson, Meyers and Adams;85;63;5;111.35033829890682;1;1;1;111;3;11;hibernating
+Gilbert-Gilmore;56;1;557;27664.070127281746;3;2;2;322;7;32;about to sleep
+Gonzalez-Ortiz;81;13;46;2569.230166015758;2;2;2;222;6;22;hibernating
+Gray-Edwards;13;0;39068;1956453.8371238587;5;5;5;555;15;55;champions
+Griffith and Sons;48;0;4810;242998.40986645606;5;3;3;533;11;53;potential loyalists
+Hanson, Rodriguez and Mayer;68;17;204;11073.097456514379;2;2;2;222;6;22;hibernating
+Hernandez LLC;61;0;1508;70728.18906837044;5;3;3;533;11;53;potential loyalists
+Hickman-Kerr;57;0;3214;160384.55995079118;5;3;3;533;11;53;potential loyalists
+Hill Group;66;2;385;18367.126349458376;2;2;2;222;6;22;hibernating
+Holmes-Lewis;36;0;12077;604867.709453587;5;4;4;544;13;54;champions
+Hopkins-Nicholson;75;6;98;5242.305553768302;2;2;2;222;6;22;hibernating
+Hull PLC;2;0;14055;701888.9337792969;5;4;4;544;13;54;champions
+Hunt, Wright and Morris;78;130;33;1802.191563348044;1;2;2;122;5;12;hibernating
+Huynh, Collier and Combs;9;0;22804;1141166.6528901167;5;4;4;544;13;54;champions
+Joyce-Patterson;22;0;20720;1038871.7416410495;5;4;4;544;13;54;champions
+Kane Ltd;29;0;10143;502695.20874880307;5;4;4;544;13;54;champions
+Kelly-Harrington;12;0;38476;1932499.5462639162;5;5;5;555;15;55;champions
+Lee, Collins and Herrera;1;0;25272;1270338.714778007;5;4;5;545;14;54;champions
+Lewis-Myers;62;27;89;4513.568030957637;2;2;2;222;6;22;hibernating
+Lin Group;53;0;1200;60916.81045617606;5;3;3;533;11;53;potential loyalists
+Lloyd PLC;41;0;7309;365130.7793736912;5;4;4;544;13;54;champions
+Logan Ltd;40;0;5959;298455.30762556643;5;3;3;533;11;53;potential loyalists
+Long LLC;63;3;533;25560.96160739092;2;2;2;222;6;22;hibernating
+Macias, Newman and Payne;95;1786;1;-23.67444976609739;1;1;1;111;3;11;hibernating
+Marsh, Caldwell and Hoffman;37;0;14034;705464.5795770134;5;4;4;544;13;54;champions
+Mcbride-Phillips;86;12;4;347.8742418674358;2;1;1;211;4;21;hibernating
+Moore, Sanders and Holt;88;317;2;154.12749521882483;1;1;1;111;3;11;hibernating
+Moreno-Gardner;77;27;42;2144.6876650047657;2;2;2;222;6;22;hibernating
+Ortiz PLC;28;0;39780;1990794.9421632239;5;5;5;555;15;55;champions
+Perez Group;87;531;6;432.12480657937675;1;1;1;111;3;11;hibernating
+Perry LLC;6;0;27891;1407892.0425875897;5;5;5;555;15;55;champions
+Peterson, Smith and Adams;90;265;1;94.16257375032271;1;1;1;111;3;11;hibernating
+Pham-Stephens;59;0;1944;96981.75360165873;5;3;3;533;11;53;potential loyalists
+Price, Taylor and Bruce;93;779;1;98.08663038201843;1;1;1;111;3;11;hibernating
+Ramirez, Spencer and Tran;4;0;29838;1502605.6221223574;5;5;5;555;15;55;champions
+Ramirez-Bennett;17;0;30121;1516565.4279937225;5;5;5;555;15;55;champions
+Ramos Group;50;1;1165;58764.61407700209;3;3;3;333;9;33;need attention
+Randall, Harper and Wells;10;0;36037;1801939.070716672;5;5;5;555;15;55;champions
+Robertson PLC;80;98;6;246.04986313928237;1;1;1;111;3;11;hibernating
+Ross, Ramirez and Weber;35;0;32038;1589899.7003308968;5;5;5;555;15;55;champions
+Ross-Moreno;18;0;8594;435698.19423745945;5;4;4;544;13;54;champions
+Ruiz-Barnes;79;21;18;1028.3555019058629;2;1;1;211;4;21;hibernating
+Ryan, Krueger and Rogers;31;0;4057;202305.2289226749;5;3;3;533;11;53;potential loyalists
+Salinas and Sons;44;0;37250;1862075.7416935712;5;5;5;555;15;55;champions
+Schultz Inc;46;0;1567;80708.05695411078;5;3;3;533;11;53;potential loyalists
+Scott-Drake;83;10;23;1406.7100050060212;2;1;1;211;4;21;hibernating
+Simpson-Robinson;42;0;3115;154146.606165786;5;3;3;533;11;53;potential loyalists
+Smith Inc;21;0;38026;1895575.672214556;5;5;5;555;15;55;champions
+Smith, Payne and Robinson;74;3;58;3202.2678066673766;2;2;2;222;6;22;hibernating
+Stanley, Keller and Howard;30;0;10241;511614.6775862975;5;4;4;544;13;54;champions
+Stevenson-Daugherty;72;16;288;15024.73104278143;2;2;2;222;6;22;hibernating
+Tanner-Robbins;64;69;21;1359.7562722149953;1;1;1;111;3;11;hibernating
+Tapia and Sons;5;0;16201;809418.3672867322;5;4;4;544;13;54;champions
+Thomas-Martinez;23;0;39395;1977372.8070324236;5;5;5;555;15;55;champions
+Thompson, Kaiser and Kirk;51;0;1947;98034.41389092439;5;3;3;533;11;53;potential loyalists
+Tucker-Jackson;45;0;4867;243417.96002242988;5;3;3;533;11;53;potential loyalists
+Ward and Sons;54;45;23;1171.0850988790048;1;1;1;111;3;11;hibernating
+Ward, White and Ashley;39;0;34164;1714183.1984293808;5;5;5;555;15;55;champions
+Webb, Jones and Rangel;15;0;32315;1618238.751044241;5;5;5;555;15;55;champions
+Weiss-Archer;27;0;16098;801125.5233722804;5;4;4;544;13;54;champions
+Williams Group;70;20;306;15281.045980039276;2;2;2;222;6;22;hibernating
+Wilson, Day and Fletcher;52;4;91;4778.156371098711;2;2;2;222;6;22;hibernating
+York-Parker;32;0;22701;1149991.0603225476;5;4;4;544;13;54;champions

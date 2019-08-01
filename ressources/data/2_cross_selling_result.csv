@@ -1,0 +1,13 @@
+;bought_product;company_name;country;diff;sector;unbought_product
+0;{'Hybrids', 'MCIB Financing', 'Asset Based Financing'};Monroe, James and Peterson;Italy;1.0;Electrical industry;{'Export Finance'}
+1;{'Hybrids', 'Export Finance'};Sullivan-Payne;France;2.0;Electrical industry;{'MCIB Financing', 'Asset Based Financing'}
+2;{'Life and Dammage insurance', 'Fund Distribution Services'};Peterson-Hunt;Espagne;2.0;Chemical Industry;{'Mergers and Acquisition', 'Liquidity Management'}
+3;{'Liquidity Management'};Patterson, Lynch and Mejia;United State;3.0;Chemical Industry;{'Life and Dammage insurance', 'Mergers and Acquisition', 'Fund Distribution Services'}
+4;{'Hybrids'};Anderson, Reynolds and White;United Kinkdom;3.0;Energy industry;{'International Retail Banking', 'Asset Management', 'Commodity Financing'}
+5;{'International Retail Banking', 'Commodity Financing'};Cain Group;Italy;2.0;Energy industry;{'Hybrids', 'Asset Management'}
+6;{'International Retail Banking', 'Asset Management', 'Commodity Financing'};Fitzgerald, Brooks and Moore;Suisse;1.0;Energy industry;{'Hybrids'}
+7;{'Equity'};Rogers, Fields and Rodriguez;United State;2.0;Metallurgical industry;{'Fund Distribution Services', 'Issuer Services'}
+8;{'Equity', 'Issuer Services'};Dickson-Parker;Corse;1.0;Metallurgical industry;{'Fund Distribution Services'}
+9;{'Equity', 'Fund Distribution Services'};Matthews, Howell and Gilmore;France;1.0;Metallurgical industry;{'Issuer Services'}
+10;{'Clearing Services', 'Life and Dammage insurance', 'MCIB Financing'};Jackson-Barron;Espagne;1.0;Automotive;{'Fund Distribution Services'}
+11;{'Clearing Services'};Reyes, Jackson and Murray;Suisse;3.0;Automotive;{'Life and Dammage insurance', 'MCIB Financing', 'Fund Distribution Services'}
