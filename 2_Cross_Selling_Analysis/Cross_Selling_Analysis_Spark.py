@@ -95,7 +95,7 @@ if __name__ == "__main__":
         .format("csv") \
         .mode('overwrite') \
         .option("header", "true") \
-        .save('../ressources/data/2_cross_selling_output')
+        .save('./ressources/data/2_cross_selling_output')
 
     print( detection_result.show(10) )
 

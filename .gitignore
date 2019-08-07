@@ -9,6 +9,9 @@ __pycache__/
 # Mac Os
 .DS_Store
 
+# ignore huge file
+ressources/data/financial_sells_1000000.csv
+
 
 # Distribution / packaging
 .Python

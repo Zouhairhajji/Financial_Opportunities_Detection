@@ -1,0 +1,14 @@
+sector_name,country,company_name,company_id,product_bought,all_product_group,diff_count,unbought_products
+Automotive,Corse,Adams Group,75,"Fund Distribution Services,Prime & Clearing,ALD Car Renting and Fleet Management","ALD Car Renting and Fleet Management,Asset Based Financing,Prime & Clearing,Fund Distribution Services",1,Asset Based Financing
+Chemical Industry,United Kinkdom,Owen LLC,72,"Export Finance,Credit","Export Finance,Equity,Credit",1,Equity
+Electrical industry,Italy,Welch and Sons,81,Commodity Financing,"Financing,MCIB Financing,Fund Administration,Commodity Financing,Forex",4,"Fund Administration,Financing,Forex,MCIB Financing"
+Electrical industry,Espagne,Powers-Woodard,71,Commodity Financing,"MCIB Financing,Financing,Fund Administration,Commodity Financing,Forex",4,"Fund Administration,Financing,Forex,MCIB Financing"
+Chemical Industry,Corse,Smith Inc,82,Equity,"Export Finance,Equity,Credit",2,"Credit,Export Finance"
+Metallurgical industry,United Kinkdom,Davis and Sons,79,"Hybrids,Mergers and Acquisition","Hybrids,Mergers and Acquisition,Forex,Liquidity Management",2,"Forex,Liquidity Management"
+Metallurgical industry,Espagne,"Stafford, Bradford and Robbins",64,"Mergers and Acquisition,Forex,Liquidity Management","Hybrids,Mergers and Acquisition,Forex,Liquidity Management",1,Hybrids
+Automotive,France,Braun Group,70,"Prime & Clearing,ALD Car Renting and Fleet Management","Fund Distribution Services,Asset Based Financing,Prime & Clearing,ALD Car Renting and Fleet Management",2,"Fund Distribution Services,Asset Based Financing"
+Energy industry,Suisse,Nichols-Perry,83,Life and Dammage insurance,"Clearing Services,Commodity Financing,Commodities,Equity,Life and Dammage insurance",4,"Commodities,Clearing Services,Equity,Commodity Financing"
+Metallurgical industry,France,Campbell-Miller,84,Hybrids,"Hybrids,Mergers and Acquisition,Forex,Liquidity Management",3,"Forex,Mergers and Acquisition,Liquidity Management"
+Energy industry,United State,"Norton, Hunt and Rosales",73,"Clearing Services,Commodity Financing,Commodities","Clearing Services,Commodity Financing,Commodities,Equity,Life and Dammage insurance",2,"Life and Dammage insurance,Equity"
+Automotive,United State,"Hernandez, Reynolds and Ellis",80,Fund Distribution Services,"Fund Distribution Services,Asset Based Financing,Prime & Clearing,ALD Car Renting and Fleet Management",3,"Prime & Clearing,Asset Based Financing,ALD Car Renting and Fleet Management"
+Electrical industry,Suisse,Zhang Ltd,76,MCIB Financing,"MCIB Financing,Financing,Commodity Financing,Fund Administration,Forex",4,"Fund Administration,Financing,Forex,Commodity Financing"
