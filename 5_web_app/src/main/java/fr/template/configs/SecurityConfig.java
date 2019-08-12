@@ -36,8 +36,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/login**").permitAll()
                 .antMatchers("/users/**").authenticated()
                 .antMatchers("/roles/**").authenticated()
-                .antMatchers("/h2-console/**").permitAll()
-                //.antMatchers("/**").authenticated()
+                
+                
+                .antMatchers("/**").authenticated()
                 // STATICS STUFFS
                 
                 .and().csrf().ignoringAntMatchers("/h2-console/**")

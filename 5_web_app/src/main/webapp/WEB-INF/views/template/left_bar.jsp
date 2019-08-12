@@ -38,10 +38,9 @@
         <!-- /.search form -->
         <!-- sidebar menu: : style can be found in sidebar.less -->
         <ul class="sidebar-menu" data-widget="tree">
-            <li class="header">MAIN NAVIGATION</li>
-
-
+                
             <sec:authorize access="hasRole('ROLE_USER')">
+                <li class="header">MAIN NAVIGATION</li>
                 <li class="treeview">
                     <a href="#">
                         <i class="fa fa-dashboard"></i> <span>Admin</span>
@@ -56,15 +55,17 @@
                 </li>
             </sec:authorize>
 
+            <sec:authorize access="hasRole('ROLE_BANKER')">
+                <li class="header">Financial Analysis</li>
+                <li><a href="<c:url value="/opportunities/external_data/list" />"><i class="fa fa-circle-o text-yellow"></i>External Data Analysis</a></li>
+                <li><a href="<c:url value="/opportunities/cross_selling/list" />"><i class="fa fa-circle-o text-red"></i>Cross Selling Analysis</a></li>
+                <li><a href="<c:url value="/opportunities/segmentation/list" />"><i class="fa fa-circle-o text-aqua"></i>Segmentation Analysis</a></li>
+                <li><a href="<c:url value="/opportunities/sentiment/list" />"><i class="fa fa-circle-o text-muted"></i>Sentimental Analysis</a></li>
+            </sec:authorize>
 
-
-            <li class="header">LABELS</li>
-            <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
-            <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>
-            <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>
+                
         </ul>
     </section>
 </aside>
-                
-                
-           
+
+

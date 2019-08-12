@@ -54,8 +54,9 @@ def get_company_news(company_name):
     return news_list
 
 # analyse company reputation and calculate flag reputation
-def analyse_company_reputation(company_name, _analyzer):
+def analyse_company_reputation(company_id, company_name, _analyzer):
     global_result = {
+        'company_id': company_id,
         'company_name': company_name,
         'negative': 0,
         'positive': 0,
@@ -101,7 +102,7 @@ if __name__ == "__main__":
     
 
     company_names = init_flat_data \
-        .select('company_name') \
+        .select('company_id', 'company_name') \
         .distinct()
 
     # initialize sentimental analyze
@@ -113,7 +114,7 @@ if __name__ == "__main__":
     # detect reputation of each company
     result_reputation = company_names \
         .rdd \
-        .map(lambda x: Row(**analyse_company_reputation(x.company_name, sentimental_analyser)) ) \
+        .map(lambda x: Row(**analyse_company_reputation(x.company_id, x.company_name, sentimental_analyser)) ) \
         .toDF() \
         .withColumn('neg_tweets', def_array2str('neg_tweets'))
 
@@ -128,3 +129,16 @@ if __name__ == "__main__":
         .mode('overwrite') \
         .option("header", "true") \
         .save('./ressources/data/4_sentimental_analysis_output')
+    
+    # save result in my postgresql database
+    mode = "overwrite"
+    table_name = 'algo_sentimental_analysis'
+    url = "jdbc:postgresql://127.0.0.1:5432/financial_opportunities"
+    properties = {
+        "user": "zouhairhajji",
+        "password": '',
+        "driver": "org.postgresql.Driver"
+    }
+    result_reputation  \
+            .write     \
+            .jdbc(url=url, table=table_name, mode=mode, properties=properties)

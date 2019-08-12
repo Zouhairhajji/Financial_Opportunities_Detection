@@ -36,7 +36,6 @@
                                             <th><spring:message code="role.list.default" /></th>
                                             <th><spring:message code="role.list.createDate" /></th>
                                             <th><spring:message code="role.list.numUser" /></th>
-                                            <th><spring:message code="role.list.numCom" /></th>
                                             <th><spring:message code="as.action" /></th>
                                         </tr>
                                     </thead>
@@ -48,8 +47,6 @@
 
                                                 <td>${role.dateCreation}</td>
                                                 <td>${fn:length(role.users)}</td>
-                                                <td>${fn:length(role.useCases)}</td>
-                                                <td>${fn:length(role.viewComponents)}</td>
                                                 <td>
                                                     <a href="<c:url value="/roles/showdetail?idRole=${role.idRole}" />" class="btn btn-flat btn-xs bg-blue"><spring:message code="role.consult" /></a>
                                                     <a href="<c:url value="/roles/update?idRole=${role.idRole}" />" class="btn btn-flat btn-xs bg-blue"><spring:message code="role.modify" /></a>

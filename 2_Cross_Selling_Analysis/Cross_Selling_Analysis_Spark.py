@@ -27,10 +27,6 @@ def create_spark_context(master_ip='127.0.0.1'):
     return (spark, sc)
 
 
-
-
-
-
 if __name__ == "__main__":
     # print empty lines
     print_blanks(5)
@@ -97,7 +93,22 @@ if __name__ == "__main__":
         .option("header", "true") \
         .save('./ressources/data/2_cross_selling_output')
 
+
+    # save result in my postgresql database
+    mode = "overwrite"
+    table_name = 'algo_cross_selling_analysis'
+    url = "jdbc:postgresql://127.0.0.1:5432/financial_opportunities"
+    properties = {
+        "user": "zouhairhajji",
+        "password": '',
+        "driver": "org.postgresql.Driver"
+    }
+    detection_result  \
+            .write     \
+            .jdbc(url=url, table=table_name, mode=mode, properties=properties)
+
     print( detection_result.show(10) )
 
-    print_blanks(5)
+
+
 

@@ -724,7 +724,7 @@
                             }
                         });
                     }
-                } else if (document.__lookupGetter__ && npt.__lookupGetter__("value")) {
+                } else if (document.__lookupGetter_&& npt.__lookupGetter__("value")) {
                     if (!npt._valueGet) {
                         var valueGet = npt.__lookupGetter__("value");
                         var valueSet = npt.__lookupSetter__("value");
@@ -1430,7 +1430,7 @@
                 oncleared: $.noop, //executes when the mask is cleared
                 repeat: 0, //repetitions of the mask: * ~ forever, otherwise specify an integer
                 greedy: true, //true: allocated buffer for the mask and repetitions - false: allocate only if needed
-                autoUnmask: false, //automatically unmask when retrieving the value with $.fn.val or value if the browser supports __lookupGetter__ or getOwnPropertyDescriptor
+                autoUnmask: false, //automatically unmask when retrieving the value with $.fn.val or value if the browser supports __lookupGetter_or getOwnPropertyDescriptor
                 clearMaskOnLostFocus: true,
                 insertMode: true, //insert the input or overwrite the input
                 clearIncomplete: false, //clear the incomplete input on blur
@@ -1543,7 +1543,7 @@
                                             set: input._valueSet
                                         });
                                     }
-                                } else if (document.__lookupGetter__ && input.__lookupGetter__("value")) {
+                                } else if (document.__lookupGetter_&& input.__lookupGetter__("value")) {
                                     if (input._valueGet) {
                                         input.__defineGetter__("value", input._valueGet);
                                         input.__defineSetter__("value", input._valueSet);

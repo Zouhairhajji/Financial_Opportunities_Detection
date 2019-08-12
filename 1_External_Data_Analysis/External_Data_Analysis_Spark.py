@@ -3,7 +3,7 @@ from pyspark.sql import SparkSession
 
 
 from pyspark.sql.types import StringType, IntegerType, ArrayType, FloatType
-from pyspark.sql.functions import udf, dense_rank, desc, asc
+from pyspark.sql.functions import udf, dense_rank, desc, asc, lit
 from pyspark.sql import functions as F
 from pyspark.sql.functions import collect_set
 from pyspark.sql.window import Window
@@ -297,18 +297,37 @@ if __name__ == "__main__":
         .withColumn('segment_name', define_segment_def_udf('final_rank'))
 
 
-    # save resultat 
-    global_result.coalesce(1) \
-        .write   \
-        .format("csv") \
-        .mode('overwrite') \
-        .option("header", "true") \
-        .save('./ressources/data/1_financial_analysis_output')
-
     # select some lines
+    global_result = global_result \
+        .withColumn('segment_name', define_segment_def_udf('final_rank')) \
+        .select(['company_name', 'final_potential', 'forecast_nbi', 'final_potential_nbi', 'final_rank', 'segment_name'])
+
+
+    # add a flag column before save
+    global_result = global_result.withColumn('product_name', lit('Leasing'))
+    global_result = global_result.withColumn('state_banker', lit('-'))
+
+    # save resultat 
+    # global_result.coalesce(1) \
+    #    .write   \
+    #    .format("csv") \
+    #    .mode('overwrite') \
+    #    .option("header", "true") \
+    #    .save('./ressources/data/1_financial_analysis_output')
+
+
+    # save result in my postgresql database
+    mode = "overwrite"
+    table_name = 'algo_external_data_analysis'
+    url = "jdbc:postgresql://127.0.0.1:5432/financial_opportunities"
+    properties = {
+        "user": "zouhairhajji",
+        "password": '',
+        "driver": "org.postgresql.Driver"
+    }
     global_result  \
-        .select(['company_name', 'final_potential', 'forecast_nbi', 'final_potential_nbi', 'final_rank', 'segment_name']) \
-        .show(35)
+            .write     \
+            .jdbc(url=url, table=table_name, mode=mode, properties=properties)
 
 
     

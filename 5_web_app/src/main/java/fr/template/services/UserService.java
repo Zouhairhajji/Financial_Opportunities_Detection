@@ -95,7 +95,7 @@ public class UserService implements UserDetailsService {
     }
 
     @Transactional
-    public Role findRole(Integer idRole) {
+    public Role findRole(Long idRole) {
         return this.roleRepository.findOne(idRole);
     }
 
@@ -126,7 +126,7 @@ public class UserService implements UserDetailsService {
     }
 
     @Transactional
-    public void deleteRole(Integer idRole) {
+    public void deleteRole(Long idRole) {
         this.roleRepository.delete(idRole);
     }
 

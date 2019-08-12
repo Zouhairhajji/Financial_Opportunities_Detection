@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package fr.template.controllers;
+package fr.template.controllers.management;
 
 
 
@@ -139,9 +139,9 @@ public class UserController extends AbstractController {
             @Override
             public void setAsText(String text) throws IllegalArgumentException {
                 String[] ids = text.split(",");
-                List<Role> roles = new ArrayList<Role>();
+                List<Role> roles = new ArrayList<>();
                 for (String id : ids) {
-                    roles.add(userService.findRole(Integer.parseInt(id)));
+                    roles.add(userService.findRole(Long.parseLong(id)));
                 }
                 setValue(roles);
             }

@@ -9,11 +9,8 @@ import java.io.Serializable;
 import java.util.List;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
-import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
-import javax.persistence.Table;
-import lombok.Data;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Parameter;
 
@@ -21,9 +18,6 @@ import org.hibernate.annotations.Parameter;
  *
  * @author zouhairhajji
  */
-@Entity
-@Table(name = "customers")
-@Data
 public class CustomerEntity  implements Serializable{
 
     @Id

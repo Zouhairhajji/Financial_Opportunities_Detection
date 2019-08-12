@@ -14,7 +14,7 @@ import org.springframework.data.repository.CrudRepository;
  *
  * @author fqlh0717
  */
-public interface RoleRepository extends CrudRepository<Role, Integer> {
+public interface RoleRepository extends CrudRepository<Role, Long> {
 
     
     @Override

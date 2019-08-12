@@ -631,7 +631,7 @@ $.Widget.prototype = {
 		}
 
 		if ( typeof key === "string" ) {
-			// handle nested keys, e.g., "foo.bar" => { foo: { bar: ___ } }
+			// handle nested keys, e.g., "foo.bar" => { foo: { bar: __} }
 			options = {};
 			parts = key.split( "." );
 			key = parts.shift();

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package fr.template.controllers;
+package fr.template.controllers.management;
 
 import fr.template.abstractClasses.AbstractController;
 import fr.template.models.authentification.Role;
@@ -50,7 +50,7 @@ public class RoleController extends AbstractController {
 
     @RequestMapping(value = "showdetail", method = RequestMethod.GET)
     public String getRoleDetail(
-            @RequestParam(value = "idRole", required = true) Integer idRole,
+            @RequestParam(value = "idRole", required = true) Long idRole,
             Model model) throws IOException {
 
         super.init("detail_role", "Affichage des details", model);
@@ -62,7 +62,7 @@ public class RoleController extends AbstractController {
 
     @RequestMapping(value = "update", method = RequestMethod.GET)
     public String showUpdateRoleForm(
-            @RequestParam(value = "idRole", required = true) Integer idRole,
+            @RequestParam(value = "idRole", required = true) Long idRole,
             Model model) throws IOException {
         super.init("update_role", "Affichage des details", model);
 
@@ -114,7 +114,7 @@ public class RoleController extends AbstractController {
     }
 
     @RequestMapping(value = "delete", method = RequestMethod.GET)
-    public String delete(@RequestParam(value = "idRole", required = true) Integer idRole, Model model) {
+    public String delete(@RequestParam(value = "idRole", required = true) Long idRole, Model model) {
         try {
             this.userService.deleteRole(idRole);
             return super.redirect("/roles/list");

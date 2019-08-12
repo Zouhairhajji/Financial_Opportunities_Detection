@@ -8,11 +8,11 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <header class="main-header">
     <!-- Logo -->
-    <a href="../../index2.html" class="logo">
+    <a href="<c:url value="/" />" class="logo">
         <!-- mini logo for sidebar mini 50x50 pixels -->
-        <span class="logo-mini"> <spring:message code="app.small.name" /> </span>
+        <span class="logo-mini"> <b>PRO</b> </span>
         <!-- logo for regular state and mobile devices -->
-        <span class="logo-lg"><spring:message code="app.name" /></span>
+        <span class="logo-lg"><small><b>Portail</b> de Restitution</small></span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">

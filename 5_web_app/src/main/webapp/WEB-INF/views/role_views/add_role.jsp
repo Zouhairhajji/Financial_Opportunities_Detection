@@ -16,7 +16,7 @@
     <body class="skin-blue sidebar-mini sidebar-collapse" style="height: auto; min-height: 100%;">
         <div class="wrapper">
             <jsp:include page="/WEB-INF/views/template/navbar.jsp" />
-            <jsp:include page="/WEB-INF/views/template/leftmenu.jsp" />
+            <jsp:include page="/WEB-INF/views/template/left_bar.jsp" />
             <div class="content-wrapper">
                 <section class="content">
                     <jsp:include page="/WEB-INF/views/template/messages.jsp" />
@@ -48,17 +48,7 @@
                                 </div>
                             </spring:bind>
                             
-                            <spring:bind path="viewComponents">
-                                <div class="form-group ${status.error ? 'has-error' : ''}">
-                                    <label class="col-sm-2 control-label"><spring:message code="as.com" /> :</label>
-                                    <div class="col-sm-5">
-                                        <form:select path="viewComponents" items="${viewComponents}" itemLabel="label" itemValue="idViewComponent"
-                                                     multiple="true" size="5" class="form-control" />
-                                        <form:errors path="viewComponents" class="control-label" />
-                                    </div>
-                                    <div class="col-sm-5"></div>
-                                </div>
-                            </spring:bind>
+                            
                             
                         </div>
                         <div class="box-footer">
@@ -74,7 +64,6 @@
                 <!-- /.content -->
             </div>
             <jsp:include page="/WEB-INF/views/template/footer.jsp" />
-            <jsp:include page="/WEB-INF/views/template/rightmenu.jsp" />
         </div>
         <jsp:include page="/WEB-INF/views/template/javascript.jsp" />
     </body>

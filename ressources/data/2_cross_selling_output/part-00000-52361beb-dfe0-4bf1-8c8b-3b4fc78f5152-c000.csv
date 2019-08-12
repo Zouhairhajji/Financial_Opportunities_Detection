@@ -1,0 +1,13 @@
+sector_name,country,company_name,company_id,product_bought,all_product_group,diff_count,unbought_products
+Electrical industry,Espagne,Roche Holding,1,"Hybrids,Prime & Clearing","Hybrids,Prime & Clearing,Equity",1,Equity
+Automotive,United State,Alphabet,10,"Financing,Others,Commodity Financing,Fund Distribution Services","Financing,Others,Commodity Financing,Export Finance,Fund Distribution Services",1,Export Finance
+Energy industry,United State,Kweichow Moutai,38,"Clearing Services,Equity,Forex","Clearing Services,Equity,Mergers and Acquisition,Forex",1,Mergers and Acquisition
+Energy industry,United State,Nike,3,"Equity,Mergers and Acquisition,Forex","Clearing Services,Equity,Mergers and Acquisition,Forex",1,Clearing Services
+Automotive,Corse,UnitedHealth Group,40,"Financing,Commodity Financing,Export Finance,Fund Distribution Services","Others,Financing,Commodity Financing,Export Finance,Fund Distribution Services",1,Others
+Energy industry,Suisse,Pfizer,48,"Clearing Services,Mergers and Acquisition,Forex","Clearing Services,Equity,Mergers and Acquisition,Forex",1,Equity
+Chemical Industry,United Kinkdom,HSBC Holdings,37,"Issuer Services,Prime & Clearing","Financing,Issuer Services,Prime & Clearing",1,Financing
+Automotive,Espagne,Facebook,15,"Others,Financing,Commodity Financing,Export Finance","Others,Financing,Commodity Financing,Export Finance,Fund Distribution Services",1,Fund Distribution Services
+Chemical Industry,France,Citigroup,7,"Issuer Services,Prime & Clearing","Financing,Issuer Services,Prime & Clearing",1,Financing
+Electrical industry,Italy,Home Depot,46,"Hybrids,Equity","Hybrids,Prime & Clearing,Equity",1,Prime & Clearing
+Electrical industry,Italy,Comcast,11,"Hybrids,Prime & Clearing","Hybrids,Prime & Clearing,Equity",1,Equity
+Electrical industry,Suisse,Visa,41,"Prime & Clearing,Equity","Hybrids,Prime & Clearing,Equity",1,Hybrids

@@ -80,7 +80,7 @@ if __name__ == "__main__":
     calculate_diff_day = udf(lambda x: (max_order_date - x).days, IntegerType())
     rfm_table = init_flat_data \
         .withColumn('recency', calculate_diff_day('order_date')) \
-        .groupby(['company_name', 'country']) \
+        .groupby(['company_id', 'company_name', 'country']) \
         .agg( 
             _mean(col('recency')).alias('recency'), 
             _count(col('order_id')).alias('frequency'),
@@ -141,5 +141,19 @@ if __name__ == "__main__":
         .mode('overwrite') \
         .option("header", "true") \
         .save('./ressources/data/3_rfm_analysis_output')
+
+
+    # save result in my postgresql database
+    mode = "overwrite"
+    table_name = 'algo_rfm_analysis'
+    url = "jdbc:postgresql://127.0.0.1:5432/financial_opportunities"
+    properties = {
+        "user": "zouhairhajji",
+        "password": '',
+        "driver": "org.postgresql.Driver"
+    }
+    rfm_table  \
+            .write     \
+            .jdbc(url=url, table=table_name, mode=mode, properties=properties)
 
     rfm_table.show(10)
